@@ -1,0 +1,29 @@
+<div class="main__container">
+    <div class="signup-card">
+  
+      <main class="signup-content">
+        <span class="signup-header">Signup</span>
+        <!-- signup form -->
+  
+        <form class="signup-form" (ngSubmit)="signup()" [formGroup]="registerForm">
+          <input formControlName="username" type="text" autofocus placeholder="Tài khoản" name="email" class="signup-input" required>
+          <input formControlName="password" type="password" placeholder="Mật khẩu" name="password" class="signup-input" minlength="6"
+                 required>
+          <input type="submit" name="submit" value="Signup" class="signup-btn" [class.btn-disabled]="registerForm.invalid"
+                 [disabled]="registerForm.invalid">
+        </form>
+        <div class="login-link-wrapper">
+          <span class="login-notice">Already Have an account?</span>
+          <a class="login-link" [routerLink]="['/signin']" >login</a>
+        </div>
+  
+      </main>
+  
+      <!-- linking to signup -->
+      <aside class="signup-aside">
+        <div class="signup-aside-overlay"></div>
+        <h1 class="signup-welcome-text">Join Minimus Today!</h1>
+        <hr class="signup-aside-hr">
+      </aside>
+    </div>
+  </div>

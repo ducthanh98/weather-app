@@ -1,0 +1,21 @@
+<!-- Slide Menu-->
+<aside class="side-menu__container" [ngClass]="{'side-menu__container-active': showMenu}" (click)="toggleMenu()">
+    <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
+        <section class="menu-header">
+            <span class="greeting__text">Welcome Back</span>
+            <div class="profile-image__container">
+                <img src="https://avatars3.githubusercontent.com/u/5658460?s=460&v=4" alt="profile-image"
+                    class="profile__image">
+            </div>
+            <div class="account-details">
+                <span class="name__text">Hamed Baatour</span>
+                <span class="email__text">hamedbaatour@gmail.com</span>
+            </div>
+        </section>
+        <section class="menu-body">
+        </section>
+        <section class="menu-footer">
+
+        </section>
+    </nav>
+</aside>

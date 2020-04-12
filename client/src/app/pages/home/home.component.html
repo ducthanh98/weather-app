@@ -1,0 +1,20 @@
+<app-sidebar></app-sidebar>
+
+<div class="root__container">
+    <app-header></app-header>
+
+    <!-- Main Content -->
+
+    <!--<router-outlet></router-outlet>-->
+    <main class="main__container">
+        <div class="main-container__bg" [ngClass]="{'main-container__bg-dark': darkModeActive}"></div>
+        <div class="main__container">
+            <router-outlet></router-outlet>
+        </div>
+
+    </main>
+    <app-footer></app-footer>
+
+    <!-- Footer -->
+
+</div>

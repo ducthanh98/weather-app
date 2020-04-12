@@ -1,0 +1,32 @@
+
+  /*
+  ================-
+      Footer
+  ================
+  */
+  .main__footer {
+    background-color: #ffffff;
+    padding-left: 45%;
+    z-index: 100;
+  }
+
+  .main__footer__bg-dark{
+    opacity: 1;
+    background-color: #2B244D;
+    transition: opacity 300ms linear;
+  }
+  
+  .copyright__text {
+    letter-spacing: 0.1rem;
+    color: #2B244D;
+  }
+
+  .copyright__text-dark{
+    color: #ffff;
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .slide-menu {
+      width: 100%;
+    }
+  }
